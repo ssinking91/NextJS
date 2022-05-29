@@ -91,6 +91,7 @@ npm run dev
   (2) \_app.js : NextJS가 모든 페이지를 렌더링 할 수 있게 하는 컴포넌트의 청사진 => 커스터마이즈(\_app.js)
 
   - \_app.js에서는 .module.css가 아닌 .css도 import가 가능
+  - Component : 렌더링하길 원하는 페이지
 
   ```jsx
   import "../styles/globals.css";
