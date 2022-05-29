@@ -69,8 +69,10 @@ npm run dev
   `}</style>
   ```
 
-  - styles를 추가하는 방법: 3. Global Styles 추가하는 방법<br/>
-    (1) page Global Styles
+  - styles를 추가하는 방법: 3. Global Styles 추가하는 방법
+    <br/>
+
+  (1) page Global Styles
 
   ```jsx
   <style jsx global>{`
