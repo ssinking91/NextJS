@@ -18,7 +18,7 @@ export default function Detail({ params }) {
 }
 
 export function getServerSideProps({ params: { params } }) {
-  // 서버에서 확인 가능
+  // getServerSideProps() => 서버에서 확인 가능
   // console.log(ctx);
   return {
     props: {
