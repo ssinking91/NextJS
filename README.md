@@ -315,8 +315,12 @@ export default function Detail() {
   - options: [선택] ]scroll(라우팅 후 스크롤업), shallow, locale 등의 옵션이 있습니다.
   - 주의: router.push는 외부 url 사용시에는 적합하지 않습니다. a tag의 target="\_blank" 를 사용하거나 window.location을 사용하는 것이 낫습니다.
 
+<br/>
+
 - ⭐ Catch All URL : 뭐든 캐치해내는 URL
   - [...변수] 지정 : [...params].js => router.query.params로 불러올 수 있고, 배열 형식임
+  - 백엔드에서 pre-render 되기때문에, server에서 router.query.params는 아직 존재하지 않아 에러가 남
+  - 즉, 컴포넌트 내부에서 router를 사용하면 router는 프론트에서만 실행이 됨
 
 ```jsx
 import Seo from "../../components/Seo";
