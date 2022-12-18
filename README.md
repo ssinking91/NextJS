@@ -311,7 +311,9 @@ module.exports = {
 
 <br/>
 
-2.  index.js의 router.push() 정의
+  
+
+2.  #### [index.js의 router.push() 정의](https://im-designloper.tistory.com/102)
 
     - router.push()의 as를 이용하여 url 숨김
 
@@ -380,6 +382,26 @@ export default function Detail() {
   - options: [선택] ]scroll(라우팅 후 스크롤업), shallow, locale 등의 옵션이 있습니다.
   - 주의: router.push는 외부 url 사용시에는 적합하지 않습니다. a tag의 target="\_blank" 를 사용하거나 window.location을 사용하는 것이 낫습니다.
 
+- Router as 사용법
+  
+  ```javascript
+  import Router from 'next/router'
+
+  function handleClick(){
+    Router.push('실제로 이동할 주소', '사용자에게 보여줄 주소')
+  }
+  ```
+
+- Link as 사용법
+
+  ```javascript
+  import Router from 'next/router'
+  
+  <Link href="실제 이동할 주소" as="사용자에게 보여줄 주소">
+    <a>Drive</a>
+  </Link>
+  ```
+  
 <br/>
 
 ---
